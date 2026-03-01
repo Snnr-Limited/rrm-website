@@ -384,6 +384,82 @@ body {
 }
 
 /* ============================================
+   PLATFORMS
+   ============================================ */
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.platform-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.platform-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.platform-card-mobile {
+  border-color: var(--color-accent-2);
+  background: linear-gradient(160deg, rgba(167, 139, 250, 0.06), var(--color-surface));
+}
+
+.platform-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.platform-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.platform-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+
+.platform-card-mobile .platform-tag {
+  color: var(--color-accent-2);
+}
+
+.platform-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.platform-body {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.platform-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* ============================================
    PRICING
    ============================================ */
 .cards-2 {
@@ -703,6 +779,10 @@ body {
   }
 
   .cards-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms-grid {
     grid-template-columns: 1fr;
   }
 
