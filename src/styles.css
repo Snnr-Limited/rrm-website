@@ -386,6 +386,16 @@ body {
 /* ============================================
    PRICING
    ============================================ */
+.cards-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pricing-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .pricing-cards {
   align-items: stretch;
 }
@@ -455,12 +465,44 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: var(--color-text);
   flex: 1;
 }
 
 .pricing-features li {
   color: var(--color-muted);
+}
+
+.pricing-features strong {
+  color: var(--color-text);
+}
+
+.pricing-addons-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pricing-addons-label .section-label {
+  margin-bottom: 0;
+}
+
+.pricing-addons-desc {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.pricing-addons .card {
+  border-style: dashed;
+}
+
+.addon-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.addon-icon {
+  font-size: 1.5rem;
 }
 
 /* ============================================
@@ -657,6 +699,10 @@ body {
   }
 
   .cards-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-2 {
     grid-template-columns: 1fr;
   }
 
