@@ -502,6 +502,16 @@ body {
   white-space: nowrap;
 }
 
+.pricing-badge-earlybird {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  color: #0a0a0f;
+}
+
+.pricing-earlybird {
+  border-color: #f59e0b;
+  background: linear-gradient(160deg, rgba(245, 158, 11, 0.08), var(--color-surface));
+}
+
 .pricing-tier {
   font-size: 0.85rem;
   font-weight: 700;
