@@ -7,7 +7,7 @@
   <meta name="description" content="Restaurant Regulation Management — go paperless, digitise your Food Control Templates, and automate compliance with IoT and AI." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">RRM <span>by Snnr</span></a>
-      <ul class="nav-links">
+      <a href="#hero" class="nav-logo">RRM <span>by Snnr</span></a>
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#features">Features</a></li>
         <li><a href="#platforms">Platforms</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
@@ -24,7 +24,7 @@
         <li><a href="#demo">Demo</a></li>
         <li><a href="#get-started" class="btn btn-primary btn-sm">Get Started</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
     </div>
   </nav>
 
@@ -396,12 +396,22 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
+
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
   </script>
 
 </body>
