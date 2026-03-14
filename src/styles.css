@@ -315,6 +315,12 @@ select:focus {
   padding: 1.25rem 1rem;
 }
 
+.hero-stat-coming-soon,
+.card-coming-soon {
+  position: relative;
+  border-style: dashed;
+}
+
 .hero-stat-value,
 .step-number,
 .pricing-amount {
@@ -342,6 +348,23 @@ select:focus {
   color: var(--color-muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.coming-soon-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.45rem;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid rgba(217, 138, 106, 0.35);
+  border-radius: 999px;
+  background: rgba(217, 138, 106, 0.12);
+  color: var(--color-accent-2);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .cards {
@@ -551,6 +574,10 @@ select:focus {
   border-style: dashed;
 }
 
+.addon-header .coming-soon-pill {
+  margin-left: auto;
+}
+
 .demo-grid {
   align-items: center;
 }
@@ -690,6 +717,13 @@ select:focus {
 
   .container {
     padding: 0 1.5rem;
+  }
+
+  .hero-stat-label .coming-soon-pill,
+  .card-title .coming-soon-pill,
+  .platform-list .coming-soon-pill {
+    margin-left: 0.35rem;
+    margin-top: 0.35rem;
   }
 
   .cta-box {
