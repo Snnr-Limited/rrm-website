@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RRM — Snnr Limited</title>
-  <meta name="description" content="Restaurant Regulation Management — go paperless, digitise your Food Control Templates, and automate compliance with IoT and AI." />
+  <meta name="description" content="Restaurant Regulation Management — go paperless, digitise your Food Control Templates, and prepare for upcoming IoT and AI automation features." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">RRM <span>by Snnr</span></a>
-      <ul class="nav-links">
+      <a href="#hero" class="nav-logo">RRM <span>by Snnr</span></a>
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#features">Features</a></li>
         <li><a href="#platforms">Platforms</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
@@ -24,7 +24,7 @@
         <li><a href="#demo">Demo</a></li>
         <li><a href="#get-started" class="btn btn-primary btn-sm">Get Started</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
     </div>
   </nav>
 
@@ -36,7 +36,7 @@
       <div class="container">
         <span class="hero-badge">Restaurant Regulation Management</span>
         <h1 class="hero-title">No More<br />Paper-Based Auditing</h1>
-        <p class="hero-sub">RRM gives restaurant owners and auditors a powerful web dashboard for oversight, while kitchen staff get a fast mobile experience for daily compliance — all connected, all paperless.</p>
+        <p class="hero-sub">RRM gives restaurant owners and auditors a powerful web dashboard for oversight, while kitchen staff get a fast mobile experience for daily compliance. IoT automation and AI-assisted workflows are on the roadmap and marked as coming soon.</p>
         <div class="hero-actions">
           <a href="#get-started" class="btn btn-primary">Start Free Trial</a>
           <a href="#demo" class="btn btn-ghost">Watch Demo</a>
@@ -50,13 +50,13 @@
             <span class="hero-stat-value">Mobile</span>
             <span class="hero-stat-label">Kitchen App</span>
           </div>
-          <div class="hero-stat">
+          <div class="hero-stat hero-stat-coming-soon">
             <span class="hero-stat-value">IoT</span>
-            <span class="hero-stat-label">Auto Logging</span>
+            <span class="hero-stat-label">Auto Logging <span class="coming-soon-pill">Coming Soon</span></span>
           </div>
-          <div class="hero-stat">
+          <div class="hero-stat hero-stat-coming-soon">
             <span class="hero-stat-value">AI</span>
-            <span class="hero-stat-label">Voice &amp; Vision</span>
+            <span class="hero-stat-label">Voice &amp; Vision <span class="coming-soon-pill">Coming Soon</span></span>
           </div>
           <div class="hero-stat">
             <span class="hero-stat-value">2 mo</span>
@@ -84,12 +84,12 @@
                 <h3 class="platform-title">Full Web Dashboard</h3>
               </div>
             </div>
-            <p class="platform-body">A comprehensive management interface accessible from any desktop or laptop browser. Review compliance history, manage templates, configure IoT sensors, and generate audit-ready reports — all from one place.</p>
+            <p class="platform-body">A comprehensive management interface accessible from any desktop or laptop browser. Review compliance history, manage templates, and generate audit-ready reports from one place, with IoT sensor configuration planned as a coming soon capability.</p>
             <ul class="platform-list">
               <li>📊 Full compliance history &amp; audit trail</li>
               <li>⚙️ Template management &amp; configuration</li>
               <li>📤 One-click auditor report export</li>
-              <li>🌡️ IoT sensor dashboard &amp; alerts</li>
+              <li>🌡️ IoT sensor dashboard &amp; alerts <span class="coming-soon-pill">Coming Soon</span></li>
               <li>👥 Team &amp; access management</li>
             </ul>
           </div>
@@ -102,12 +102,12 @@
                 <h3 class="platform-title">Mobile App &amp; Web</h3>
               </div>
             </div>
-            <p class="platform-body">A streamlined mobile experience designed for the speed of a working kitchen. Complete daily Food Control Templates with voice, camera, or touch — fast, focused, and distraction-free.</p>
+            <p class="platform-body">A streamlined mobile experience designed for the speed of a working kitchen. Complete daily Food Control Templates with touch today, while voice, camera, and smart automation features roll out as coming soon additions.</p>
             <ul class="platform-list">
-              <li>🎙️ AI voice input — speak your entries</li>
-              <li>📸 Camera capture for deliveries &amp; paper forms</li>
+              <li>🎙️ AI voice input — speak your entries <span class="coming-soon-pill">Coming Soon</span></li>
+              <li>📸 Camera capture for deliveries &amp; paper forms <span class="coming-soon-pill">Coming Soon</span></li>
               <li>✅ Daily task checklists &amp; reminders</li>
-              <li>🌡️ Live IoT sensor readings at a glance</li>
+              <li>🌡️ Live IoT sensor readings at a glance <span class="coming-soon-pill">Coming Soon</span></li>
               <li>⚡ Works offline, syncs automatically</li>
             </ul>
           </div>
@@ -138,22 +138,22 @@
             <p class="card-body">Purpose-built for on-the-go use. Staff can complete compliance tasks on smartphones and tablets without missing a step.</p>
           </div>
 
-          <div class="card">
+          <div class="card card-coming-soon">
             <div class="card-icon">🌡️</div>
-            <h3 class="card-title">IoT Sensor Automation</h3>
-            <p class="card-body">Connect temperature and acidity sensors to automatically log critical readings — no manual entry, no human error.</p>
+            <h3 class="card-title">IoT Sensor Automation <span class="coming-soon-pill">Coming Soon</span></h3>
+            <p class="card-body">Planned temperature and acidity sensor integrations will automatically log critical readings once released.</p>
           </div>
 
-          <div class="card">
+          <div class="card card-coming-soon">
             <div class="card-icon">🎙️</div>
-            <h3 class="card-title">AI Voice Input</h3>
-            <p class="card-body">Speak your entries hands-free. Our AI transcribes and maps your voice directly into the correct form fields in real time.</p>
+            <h3 class="card-title">AI Voice Input <span class="coming-soon-pill">Coming Soon</span></h3>
+            <p class="card-body">Hands-free voice entry is planned so staff can speak updates and have them mapped into the right form fields.</p>
           </div>
 
-          <div class="card">
+          <div class="card card-coming-soon">
             <div class="card-icon">📸</div>
-            <h3 class="card-title">Camera &amp; Visual Capture</h3>
-            <p class="card-body">Photograph deliveries and existing paper forms. AI extracts and digitises the data automatically — no re-keying required.</p>
+            <h3 class="card-title">Camera &amp; Visual Capture <span class="coming-soon-pill">Coming Soon</span></h3>
+            <p class="card-body">Planned AI-assisted camera capture will help digitise deliveries and paper forms without manual re-entry.</p>
           </div>
 
           <div class="card">
@@ -195,8 +195,8 @@
           <div class="step">
             <div class="step-number">03</div>
             <div class="step-content">
-              <h3 class="step-title">IoT &amp; AI Do the Rest</h3>
-              <p class="step-body">Connected sensors auto-log temperature and acidity readings. AI captures deliveries and processes paper forms via camera — your records fill themselves.</p>
+              <h3 class="step-title">IoT &amp; AI, Coming Soon</h3>
+              <p class="step-body">Connected sensors, AI capture for deliveries, and paper-form processing are planned roadmap items and will be released after the core platform.</p>
             </div>
           </div>
 
@@ -249,10 +249,10 @@
                 <span class="pricing-amount">$25</span>
                 <span class="pricing-period">NZD / month for first 6 months</span>
               </div>
-              <p class="pricing-desc">Lock in a discounted rate and get a direct line to the development team. Available for new sign-ups until 1 January 2027.</p>
+              <p class="pricing-desc">Lock in a discounted rate and get a direct line to the development team. Available for new sign-ups until 1 January 2027, including early visibility into upcoming IoT and AI features.</p>
               <ul class="pricing-features">
                 <li>✓ Everything in Starter</li>
-                <li>✓ IoT-enabled platform</li>
+                <li>✓ Priority access to IoT features when released</li>
                 <li>✓ Full audit history &amp; records</li>
                 <li>✓ 🎙️ Voice-over direct communication</li>
                 <li>✓ 💬 WhatsApp messaging with dev team</li>
@@ -268,10 +268,10 @@
                 <span class="pricing-amount">$50</span>
                 <span class="pricing-period">NZD / month per restaurant</span>
               </div>
-              <p class="pricing-desc">Full access to RRM's digital compliance platform. One flat monthly fee per restaurant — simple as that.</p>
+              <p class="pricing-desc">Full access to RRM's digital compliance platform. One flat monthly fee per restaurant, with future IoT and AI modules released separately when ready.</p>
               <ul class="pricing-features">
                 <li>✓ Everything in Starter</li>
-                <li>✓ IoT-enabled platform</li>
+                <li>✓ Access to the core digital compliance platform</li>
                 <li>✓ Full audit history &amp; records</li>
                 <li>✓ Priority support</li>
                 <li>✓ Bi-weekly earlybird sessions</li>
@@ -284,48 +284,50 @@
           <!-- Add-ons -->
           <div class="pricing-addons-label">
             <span class="section-label">Add-Ons</span>
-            <p class="pricing-addons-desc">IoT is enabled by default on all plans. Just add the sensors you need — no extra platform fees.</p>
+            <p class="pricing-addons-desc">These add-ons are planned roadmap items. Register interest now and we will notify you when IoT and AI modules are available.</p>
           </div>
 
           <div class="cards cards-2 pricing-cards pricing-addons">
 
-            <div class="card pricing-card addon-card">
+            <div class="card pricing-card addon-card card-coming-soon">
               <div class="addon-header">
                 <span class="addon-icon">🌡️</span>
                 <p class="pricing-tier">IoT Add-On</p>
+                <span class="coming-soon-pill">Coming Soon</span>
               </div>
               <div class="pricing-price">
                 <span class="pricing-amount">$20</span>
-                <span class="pricing-period">NZD / month per sensor</span>
+                <span class="pricing-period">NZD / month per sensor, planned pricing</span>
               </div>
-              <p class="pricing-desc">The RRM platform is IoT-enabled by default. Simply rent the sensors you need — temperature and acidity both at the same flat monthly rate.</p>
+              <p class="pricing-desc">Planned sensor rentals for temperature and acidity monitoring. Pricing is indicative until the IoT module launches.</p>
               <ul class="pricing-features">
-                <li>✓ No extra platform fee — IoT included in Core</li>
-                <li>✓ Temperature sensor rental — $20/mo each</li>
-                <li>✓ Acidity sensor rental — $20/mo each</li>
+                <li>✓ Temperature sensor rental — planned at $20/mo each</li>
+                <li>✓ Acidity sensor rental — planned at $20/mo each</li>
                 <li>✓ Automatic compliance data logging</li>
                 <li>✓ Real-time alerts &amp; audit records</li>
+                <li>✓ Join the waitlist for launch updates</li>
               </ul>
-              <a href="#get-started" class="btn btn-ghost">Add IoT</a>
+              <a href="mailto:hello@snnr.co.nz?subject=RRM%20IoT%20Waitlist" class="btn btn-ghost">Join IoT Waitlist</a>
             </div>
 
-            <div class="card pricing-card addon-card">
+            <div class="card pricing-card addon-card card-coming-soon">
               <div class="addon-header">
                 <span class="addon-icon">🤖</span>
                 <p class="pricing-tier">AI Add-On</p>
+                <span class="coming-soon-pill">Coming Soon</span>
               </div>
               <div class="pricing-price">
                 <span class="pricing-amount">$50</span>
-                <span class="pricing-period">NZD / month per restaurant</span>
+                <span class="pricing-period">NZD / month per restaurant, planned pricing</span>
               </div>
-              <p class="pricing-desc">Bring voice input, smart camera capture, and AI-assisted form completion to your team.</p>
+              <p class="pricing-desc">Planned AI tools for voice input, smart camera capture, and assisted form completion for busy teams.</p>
               <ul class="pricing-features">
                 <li>✓ AI voice input for all forms</li>
                 <li>✓ Camera capture for deliveries</li>
                 <li>✓ Paper form digitisation via photo</li>
                 <li>✓ Continuous AI model improvements</li>
               </ul>
-              <a href="#get-started" class="btn btn-ghost">Add AI</a>
+              <a href="mailto:hello@snnr.co.nz?subject=RRM%20AI%20Waitlist" class="btn btn-ghost">Join AI Waitlist</a>
             </div>
 
           </div>
@@ -396,12 +398,22 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
+
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
   </script>
 
 </body>
