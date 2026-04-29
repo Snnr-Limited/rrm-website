@@ -328,6 +328,12 @@ select:focus {
   font-weight: 800;
 }
 
+.pricing-tbd {
+  font-size: 2rem;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+
 .hero-stat-value,
 .step-number {
   display: block;
