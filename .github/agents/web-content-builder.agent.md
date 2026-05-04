@@ -1,5 +1,5 @@
 ---
-description: "Use this agent when the user asks to create, edit, or update website content and pages.\n\nTrigger phrases include:\n- 'create a new page for'\n- 'update the content on'\n- 'edit this page'\n- 'add content to the website'\n- 'modify the website layout'\n- 'create a new section'\n- 'update the website'\n\nExamples:\n- User says 'create a new landing page for the service' → invoke this agent to build the page with HTML, CSS, and content\n- User asks 'can you update the about page with new information?' → invoke this agent to edit the existing content\n- User says 'I want to add a testimonials section to the homepage' → invoke this agent to add the section with proper styling and structure\n- User requests 'redesign the contact page layout' → invoke this agent to restructure the page for better UX"
+description: "Creates and updates website pages and sections, keeping content, layout, HTML, and CSS aligned with the existing design system while improving structure, accessibility, responsiveness, and UX overall."
 name: web-content-builder
 tools: ['shell', 'read', 'search', 'edit', 'task', 'skill', 'web_search', 'web_fetch', 'ask_user']
 ---
