@@ -75,6 +75,5 @@ npm run build
 ```
 
 The GitHub Actions workflow builds Astro and uploads `dist/` to GitHub Pages.
-The Astro config currently targets GitHub Project Pages for this repository. If
-the site moves to a custom domain, update `site` and `base` in
-`astro.config.mjs`.
+The Astro config uses root-relative URLs so the site runs from the domain root
+rather than a `/rrm-website/` subpath.
