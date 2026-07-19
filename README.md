@@ -60,13 +60,14 @@ publishDate: 2026-07-19
 author: "Snnr Limited"
 tags:
   - product
-slug: post-url-slug
 ---
 
 Write the post body in Markdown.
 ```
 
-Draft posts can be hidden from the build with `draft: true`.
+The Markdown filename controls the post URL. For example,
+`src/content/blog/post-url-slug.md` publishes at `/blog/post-url-slug/`. Draft
+posts can be hidden from the build with `draft: true`.
 
 ## Build and deploy
 

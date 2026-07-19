@@ -9,7 +9,6 @@ const blog = defineCollection({
     publishDate: z.coerce.date(),
     author: z.string().default('Snnr Limited'),
     tags: z.array(z.string()).default([]),
-    slug: z.string(),
     draft: z.boolean().default(false),
   }),
 });

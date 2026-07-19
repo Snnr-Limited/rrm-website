@@ -32,7 +32,7 @@ const blogBase = `${baseUrl}blog`;
           <article class="card blog-card">
             <p class="blog-meta">{formatDate(post.data.publishDate)} · {post.data.author}</p>
             <h2 class="card-title">
-              <a href={`${blogBase}/${post.data.slug}/`}>{post.data.title}</a>
+              <a href={`${blogBase}/${post.id}/`}>{post.data.title}</a>
             </h2>
             <p class="card-body">{post.data.description}</p>
             {post.data.tags.length > 0 && (

@@ -6,7 +6,6 @@ author: "Snnr Limited"
 tags:
   - compliance
   - product
-slug: going-paperless
 ---
 
 Paper-based Food Control Templates make compliance harder than it needs to be. They are easy to misplace, slow to review, and difficult to prepare for an audit.
