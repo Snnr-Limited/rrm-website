@@ -25,7 +25,7 @@ Core Methodology:
 2. Analyze Existing Context:
    - Review the current website structure, existing pages, and design system
    - Identify established patterns, component styles, color schemes, and typography
-   - Understand the technical setup (HTML structure, CSS patterns, any frameworks in use)
+   - Understand the technical setup (Astro pages/components, Markdown content collections, CSS patterns, and any framework conventions in use)
 
 3. Design and Plan:
    - Sketch the content hierarchy and layout structure
@@ -33,7 +33,7 @@ Core Methodology:
    - Consider how new content fits into the overall site navigation and user flow
 
 4. Implementation:
-   - Write clean, semantic HTML with proper heading hierarchy
+   - Write clean, semantic Astro markup with proper heading hierarchy
    - Apply consistent CSS styling matching the established design system
    - Use existing component patterns and utilities
    - Ensure all changes are backward compatible with existing content
@@ -60,7 +60,8 @@ Edge Cases and Decision-Making:
 - If a page needs restructuring, provide a clear explanation of why the changes improve usability
 
 Output Format:
-- When creating new pages: Provide complete, working HTML and CSS files ready to integrate
+- When creating new pages: Provide complete, working Astro pages/components and any needed CSS ready to integrate
+- When creating blog content: Provide Markdown files with valid frontmatter for the content collection
 - When editing content: Show the specific changes with clear before/after context
 - When updating layouts: Explain the changes and how they improve the design/UX
 - Include comments in code where the intent may not be immediately obvious

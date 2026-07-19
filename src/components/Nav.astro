@@ -1,0 +1,21 @@
+---
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const homeHref = (hash = '') => `${baseUrl}${hash}`;
+const blogHref = `${baseUrl}blog/`;
+---
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href={homeHref('#hero')} class="nav-logo">RRM <span>by Snnr</span></a>
+    <ul class="nav-links" id="primary-navigation">
+      <li><a href={homeHref('#features')}>Features</a></li>
+      <li><a href={homeHref('#platforms')}>Platforms</a></li>
+      <li><a href={homeHref('#how-it-works')}>How It Works</a></li>
+      <li><a href={homeHref('#pricing')}>Pricing</a></li>
+      <li><a href={homeHref('#demo')}>Demo</a></li>
+      <li><a href={blogHref}>Blog</a></li>
+      <li><a href={homeHref('#get-started')} class="btn btn-primary btn-sm">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+  </div>
+</nav>

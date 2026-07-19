@@ -1,36 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RRM — Snnr Limited</title>
-  <meta name="description" content="Restaurant Regulation Management — go paperless, digitise your Food Control Templates, and prepare for upcoming IoT and AI automation features." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">RRM <span>by Snnr</span></a>
-      <ul class="nav-links" id="primary-navigation">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#platforms">Platforms</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#get-started" class="btn btn-primary btn-sm">Get Started</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
-    </div>
-  </nav>
-
+<BaseLayout
+  title="RRM — Snnr Limited"
+  description="Restaurant Regulation Management — go paperless, digitise your Food Control Templates, and prepare for upcoming IoT and AI automation features."
+>
   <main>
-
-    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-glow"></div>
       <div class="container">
@@ -68,14 +44,12 @@
 
     <div class="divider"></div>
 
-    <!-- PLATFORMS -->
     <section class="section" id="platforms">
       <div class="container">
         <p class="section-label">Two Platforms, One System</p>
         <h2 class="section-title">Built for Every Role &amp; Every Moment</h2>
         <p class="section-sub">RRM gives owners and auditors a full web dashboard for oversight and reporting, while kitchen staff get a fast, focused mobile experience for daily compliance tasks.</p>
         <div class="platforms-grid">
-
           <div class="platform-card">
             <div class="platform-header">
               <span class="platform-icon">🖥️</span>
@@ -111,21 +85,18 @@
               <li>⚡ Works offline, syncs automatically</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- FEATURES -->
     <section class="section" id="features">
       <div class="container">
         <p class="section-label">Features</p>
         <h2 class="section-title">Everything You Need to Stay Compliant</h2>
         <p class="section-sub">From digital forms to automated sensor readings, RRM covers every touchpoint of your restaurant's compliance workflow.</p>
         <div class="cards cards-3">
-
           <div class="card">
             <div class="card-icon">📋</div>
             <h3 class="card-title">Digital Food Control Templates</h3>
@@ -161,21 +132,18 @@
             <h3 class="card-title">Instant Auditor Export</h3>
             <p class="card-body">Generate and share audit-ready reports with a single tap. Give inspectors exactly what they need, in the format they expect.</p>
           </div>
-
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- HOW IT WORKS -->
     <section class="section" id="how-it-works">
       <div class="container">
         <p class="section-label">How It Works</p>
         <h2 class="section-title">Compliance in Four Simple Steps</h2>
         <p class="section-sub">Getting started with RRM takes minutes. Staying compliant takes almost no effort at all.</p>
         <div class="steps">
-
           <div class="step">
             <div class="step-number">01</div>
             <div class="step-content">
@@ -207,14 +175,12 @@
               <p class="step-body">When an inspection is due, export a complete, timestamped compliance report with one tap and share it instantly with your auditor.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- PRICING -->
     <section class="section" id="pricing">
       <div class="container">
         <p class="section-label">Pricing</p>
@@ -222,10 +188,7 @@
         <p class="section-sub">Start free, scale as you grow. No contracts, no surprises. All prices are monthly per restaurant.</p>
 
         <div class="pricing-row">
-
-          <!-- Tier 1, 2 & 3: core plans -->
           <div class="cards cards-3 pricing-cards pricing-core">
-
             <div class="card pricing-card">
               <p class="pricing-tier">Starter</p>
               <div class="pricing-price">
@@ -278,17 +241,14 @@
               </ul>
               <a href="#get-started" class="btn btn-primary">Get Started</a>
             </div>
-
           </div>
 
-          <!-- Add-ons -->
           <div class="pricing-addons-label">
             <span class="section-label">Add-Ons</span>
             <p class="pricing-addons-desc">These add-ons are planned roadmap items. Register interest now and we will notify you when IoT and AI modules are available.</p>
           </div>
 
           <div class="cards cards-2 pricing-cards pricing-addons">
-
             <div class="card pricing-card addon-card card-coming-soon">
               <div class="addon-header">
                 <span class="addon-icon">🌡️</span>
@@ -329,16 +289,13 @@
               </ul>
               <a href="mailto:hello@snnr.co.nz?subject=RRM%20AI%20Waitlist" class="btn btn-ghost">Join AI Waitlist</a>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- DEMO -->
     <section class="section" id="demo">
       <div class="container">
         <p class="section-label">Demo</p>
@@ -371,7 +328,6 @@
 
     <div class="divider"></div>
 
-    <!-- CTA -->
     <section class="section section-cta" id="get-started">
       <div class="container">
         <div class="cta-box">
@@ -386,35 +342,5 @@
         </div>
       </div>
     </section>
-
   </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Snnr Limited. All rights reserved.</p>
-      <p>Founded by Sinan Nar</p>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (toggle && navLinks) {
-      toggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-
-      navLinks.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('nav-open');
-          toggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-  </script>
-
-</body>
-</html>
+</BaseLayout>
