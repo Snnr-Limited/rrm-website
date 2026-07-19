@@ -76,4 +76,5 @@ npm run build
 
 The GitHub Actions workflow builds Astro and uploads `dist/` to GitHub Pages.
 The Astro config uses root-relative URLs so the site runs from the domain root
-rather than a `/rrm-website/` subpath.
+rather than a `/rrm-website/` subpath. The custom domain is pinned by
+`public/CNAME`.
