@@ -29,16 +29,52 @@ This is the public-facing landing page for RRM. Its job is to:
 
 ## Tech
 
-A small, dependency-free static site:
+An Astro static site deployed to GitHub Pages:
 
-- `src/index.html` — page markup and content.
-- `src/styles.css` — styling (uses the Nunito Sans web font).
+- `src/pages/index.astro` — landing page.
+- `src/layouts/BaseLayout.astro` — shared page shell, metadata, navigation, and footer.
+- `src/styles/global.css` — global styling (uses the Nunito Sans web font).
+- `src/content/blog/` — Markdown blog posts managed by Astro content collections.
+- `src/pages/blog/` — blog listing and individual post routes.
 
-No build step is required. Open `src/index.html` in a browser, or serve the
-`src/` directory with any static file server:
+## Local development
 
 ```bash
 # from the repo root
-cd src && python3 -m http.server 8000
-# then visit http://localhost:8000
+npm install
+npm run dev
 ```
+
+Astro will print the local preview URL, usually `http://localhost:4321`.
+
+## Markdown blog posts
+
+Add new blog posts as Markdown files in `src/content/blog/`. Each post needs
+frontmatter like:
+
+```md
+---
+title: "Post title"
+description: "Short summary for listings and metadata."
+publishDate: 2026-07-19
+author: "Snnr Limited"
+tags:
+  - product
+slug: post-url-slug
+---
+
+Write the post body in Markdown.
+```
+
+Draft posts can be hidden from the build with `draft: true`.
+
+## Build and deploy
+
+```bash
+npm run build
+```
+
+The GitHub Actions workflow builds Astro and uploads `dist/` to GitHub Pages.
+The Astro config currently targets GitHub Project Pages for this repository. If
+the site moves to a custom domain, update `site` and `base` in
+`astro.config.mjs`.

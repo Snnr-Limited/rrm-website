@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => data.draft !== true)).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat('en-NZ', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(date);
+
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const blogBase = `${baseUrl}blog`;
+---
+
+<BaseLayout
+  title="RRM Blog — Snnr Limited"
+  description="Product updates, compliance notes, and roadmap posts for Restaurant Regulation Management."
+>
+  <main class="section blog-index">
+    <div class="container">
+      <p class="section-label">Blog</p>
+      <h1 class="section-title">Updates from RRM</h1>
+      <p class="section-sub">Markdown-powered product updates, compliance explainers, and release notes for restaurants moving away from paper-based workflows.</p>
+
+      <div class="blog-list">
+        {posts.map((post) => (
+          <article class="card blog-card">
+            <p class="blog-meta">{formatDate(post.data.publishDate)} · {post.data.author}</p>
+            <h2 class="card-title">
+              <a href={`${blogBase}/${post.data.slug}/`}>{post.data.title}</a>
+            </h2>
+            <p class="card-body">{post.data.description}</p>
+            {post.data.tags.length > 0 && (
+              <ul class="tag-list" aria-label="Post tags">
+                {post.data.tags.map((tag) => <li>{tag}</li>)}
+              </ul>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>
